@@ -1,2 +1,53 @@
 /* ===== YOUR CSS GOES HERE ===== */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500&display=swap');
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+    margin: 0
+}
+
+body {
+    background-image: url("../images/coffee_background.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 200px;
+   }
+img#logo{
+    width: 10%;
+    margin: 1em;
+}
+h1#head-font{
+    display: inline;
+    text-decoration: none;
+    font-size:calc(20px + 2vw);
+    margin-bottom: 2vh;
+}
+header{
+    background-color: #FFFFFF
+} 
+header h1{
+    font-family:'DM Serif Display', serif;
+}
+nav ul{
+    text-align: center;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: calc(10px + 1vw);
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+nav a{
+    text-decoration:none;
+   color: #72481F;}
+
+
+
+
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
