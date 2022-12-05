@@ -230,6 +230,17 @@ div#quiz{
     font-size: calc(2em + 0.5vw);
   }
 
+  footer{
+    background-color: #fff4e9;
+    color: #72481F;
+    padding: 1em;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #72481F;
+  }
+
 /*End of Story Styling*/
 
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
