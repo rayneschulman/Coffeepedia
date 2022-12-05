@@ -30,26 +30,57 @@ header h1{
     background-color: #FFFFFF;
     border: 2px solid #FFFFFF;
     margin-bottom: 1vh;
+    z-index: 101;
 }
-nav ul{
-    text-align: center;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: calc(10px + 1vw);
+
+/*Beginning of Nav Bar*/
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: #72481F solid 1px;
+  background: transparent;
+  cursor: pointer;
 }
-nav li{
-    list-style-type: none;
-    display: inline;
-    padding: 5vw;
+.closeIcon {
+  display: none;
+}
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #fff4e9;
+  color: #72481F;
+  list-style: none;
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: calc(1.5em + 1vw);
+}
+
+li.menuItem{
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 nav a{
-    text-decoration:none;
-   color: #72481F;}
+  text-decoration: none;
+  color: #72481F;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
 
 #home-section{
     position: relative;
-   /*z-index: -1;*/
 }
 #intro-p{
     position: absolute;
@@ -62,6 +93,7 @@ nav a{
 }
 img#background{
     width: 100%;
+    z-index: -1;
 }
 .button{
     position: absolute;
@@ -100,6 +132,7 @@ div#quiz{
 }
 
 /*Beginning of Story Styling*/
+
 .slider-wrapper {
     margin: 1rem;
     position: relative;
@@ -200,3 +233,33 @@ div#quiz{
 /*End of Story Styling*/
 
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
+
+
+@media screen and (min-width: 750px){
+  button.hamburger{
+    display: none
+  }
+  ul.wide-nav{
+    text-align: center;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: calc(10px + 1vw);
+  }
+  li.nav-hor{
+    list-style-type: none;
+    display: inline;
+    padding: 5vw;
+  }
+  nav a{
+  text-decoration:none;
+   color: #72481F;
+  }
+
+}
+
+@media screen and (max-width: 750px){
+  ul.wide-nav{
+    display: none;
+    }
+}

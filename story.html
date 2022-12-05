@@ -10,6 +10,7 @@
     <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
     <link rel="stylesheet" href="styles.normalize.css" />
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- LINK TO YOUR STYLES -->
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
@@ -23,12 +24,23 @@
       <h1 id="head-font">Coffeepedia</h1> 
       <div class="top-screen">
         <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="">Beans</a></li>
-          <li><a href="">Map</a></li>
-          <li><a href="story.html">Story</a></li>
-        </ul>
+          <ul class="menu">
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li class="menuItem"><a href="">Beans</a></li>
+            <li class="menuItem"><a href="">Map</a></li>
+            <li class="menuItem"><a href="story.html">Story</a></li>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+          <ul class="wide-nav">
+            <li class="nav-hor"><a href="index.html">Home</a></li>
+            <li class="nav-hor"><a href="">Beans</a></li>
+            <li class="nav-hor"><a href="">Map</a></li>
+            <li class="nav-hor"><a href="story.html">Story</a></li>
+          </ul>
        </nav> 
       </div>
     </header>
